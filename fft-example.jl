@@ -5,10 +5,13 @@ installed = Pkg.installed()
 required = ["Images", "ImageShow", "ImageView"]
 
 # check
-if ! ( issubset(required, keys(installed) ) )
+if  ( issubset(required, keys(installed) ) )
     println("not all packages are installed. check!")
     println("need $required !")
-    return
+    Pkg.add("Images")
+    Pkg.add("ImageShow")
+    Pkg.add("Plots")
+    Pkg.add("FFTW")
 end
 
 # you may have to install

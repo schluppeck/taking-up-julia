@@ -29,7 +29,10 @@ add to `.bash_profile` and restart shell.
 ## using it / running code
 
 ```bash
-julia
+cd ~
+git clone https://github.com/schluppeck/taking-up-julia.git
+cd taking-up-julia
+julia fft-example.jl
 ```
 
 ![julia shell](./the-julia-shell.png  )
@@ -69,7 +72,7 @@ imshow( angle.(Xf));
 
 ## using ``psychopy`` from ``julia``
 
-For stimulus display + running experiments, you might 
+For stimulus display + running experiments, you might
 https://github.com/schluppeck/psychopy-from-julia
 
 ## notes
