@@ -22,7 +22,7 @@ Pkg.add("FFTW")
 
 to avoid having to double-click... and can start from shell
 ```bash
-alias julia1='/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
+alias julia='/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia'
 ```
 add to `.bash_profile` and restart shell.
 
