@@ -13,7 +13,7 @@ https://juliaimages.org/latest/index.html
 ```julia
 using Pkg
 Pkg.add("Images")
-Pkg.add("ImageShow")
+Pkg.add("ImageView")
 Pkg.add("Plots")
 Pkg.add("FFTW")
 ```
@@ -39,7 +39,7 @@ julia fft-example.jl
 
 ```julia
 using FFTW
-using Images, ImageShow
+using Images, ImageView
 
 # make a gabor
 nPixels = 512;
