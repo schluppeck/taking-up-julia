@@ -2,14 +2,14 @@
 
 import Pkg
 installed = Pkg.installed()
-required = ["Images", "ImageShow", "ImageView"]
+required = ["Images", "Images", "ImageView", "FFTW"]
 
 # check
 if  ( issubset(required, keys(installed) ) )
     println("not all packages are installed. check!")
     println("need $required !")
     Pkg.add("Images")
-    Pkg.add("ImageShow")
+    Pkg.add("ImageView")
     Pkg.add("Plots")
     Pkg.add("FFTW")
 end
@@ -17,7 +17,7 @@ end
 # you may have to install
 # import Pkg
 # Pkg.add("Images")
-# Pkg.add("ImageShow")
+# Pkg.add("ImageView")
 # Pkg.add("Plots")
 # Pkg.add("FFTW")
 
